@@ -189,16 +189,6 @@ h1 span {
   filter: saturate(0.78);
 }
 
-.portrait-index {
-  position: absolute;
-  z-index: 1;
-  right: 1px;
-  bottom: 2px;
-  color: var(--muted);
-  font-family: var(--display);
-  font-size: 0.7rem;
-}
-
 .portrait-mark {
   position: absolute;
   top: -18px;
@@ -245,14 +235,6 @@ h1 span {
   gap: 17px;
 }
 
-.section-number,
-.technology-index {
-  color: var(--green);
-  font-family: var(--display);
-  font-size: 0.72rem;
-  font-weight: 600;
-}
-
 .section-label h2 {
   margin: -5px 0 0;
   font-family: var(--display);
@@ -280,7 +262,7 @@ h1 span {
 .technology-list li {
   display: grid;
   min-height: 70px;
-  grid-template-columns: 42px 1fr 24px;
+  grid-template-columns: 1fr 24px;
   align-items: center;
   border-bottom: 1px solid var(--line);
   font-family: var(--display);
@@ -293,8 +275,10 @@ h1 span {
 }
 
 .technology-arrow {
+  justify-self: end;
   color: var(--coral);
   font-size: 1rem;
+  text-decoration: none;
   transition: transform 180ms ease;
 }
 
